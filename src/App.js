@@ -2,7 +2,7 @@ import React from 'react';
 import Cards from './Cards';
 import Sdata from './Sdata';
 
-
+console.log("master branch")
 const App = () => ( 
   <>
     <h1 className="heading_style"> List of top 6 Netflix Series in 2020 </h1>
