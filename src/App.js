@@ -2,23 +2,25 @@ import React from 'react';
 import Cards from './Cards';
 import Sdata from './Sdata';
 
-console.log("master branch")
-const App = () => ( 
-  <>
-    <h1 className="heading_style"> List of top 6 Netflix Series in 2020 </h1>
-    {Sdata.map((val, index) => {
-      return(
-        <Cards
-          key={val.id} 
-          imgsrc={val.imgsrc}
-          title={val.title}
-          sname={val.sname}
-          link={val.link}
-        />
-      );
-    })}
-  </>
-);
+
+const App = () => {
+  return (
+    <>
+      <h1 className="heading_style"> List of top 6 Netflix Series in 2020 </h1>
+      {Sdata.map((val, index) => {
+        return (
+          <Cards
+            key={val.id}
+            imgsrc={val.imgsrc}
+            title={val.title}
+            sname={val.sname}
+            link={val.link}
+          />
+        );
+      })}
+    </>
+  )
+};
 
 
 export default App;
